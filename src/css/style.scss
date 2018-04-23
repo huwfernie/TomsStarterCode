@@ -1,0 +1,44 @@
+$body: #bee7ff;
+$text : grey;
+$red: red;
+
+body {
+  background-color: $body;
+  color: $text;
+  font-size: 18px;
+}
+
+nav {
+  ul {
+    list-style: none;
+    border-bottom: 1px solid $red;
+    padding-bottom: 5px;
+    li {
+      display: inline-block;
+      padding: 0 10px 0;
+    }
+  }
+}
+
+form.register, form.login {
+  div {
+    padding: 5px;
+    width: 400px;
+    label {
+      width: 200px;
+      display: inline-block;
+      text-align: right;
+    }
+    input {
+      font-size: 20px;
+      width: 180px;
+      &:focus {
+        border-color: $red;
+      }
+    }
+  }
+  button {
+    margin: 20px;
+    cursor: pointer;
+  }
+}
